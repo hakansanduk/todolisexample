@@ -1,0 +1,28 @@
+﻿@model ToDoExample.Entities.ToDoList
+<div class="col-md-4">
+    <div class="card mb-3">
+        <div class="card-body">
+            <h4 class="card-title">
+                @Model.Name <a href="#" class="click" data-target="/home/updatelistmodal/@Model.Id">Düzenle</a>
+            </h4>
+            @foreach (var card in Model.ToDoItems)
+            {
+                <div class="card">
+                    <div class="card-body">
+                        <span class="text-muted">@card.Card</span><br />
+                        <small class="text-muted">@card.DateTime.ToString("dd.MM.yyyy HH:mm")</small>
+                        <a href="#" class="click" data-target="/home/UpdateCardModal/@card.Id">Düzenle</a>
+                        <a href="/home/DeleteCard/@card.Id">Sil</a>
+                    </div>
+                </div>
+            }
+
+        </div>
+        <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary btn-sm  click" data-target="/home/AddCardModal/@Model.Id">Yeni Kart Ekle</a>
+            <a href="/home/DeleteList/@Model.Id" class="btn btn-danger btn-sm ml-3 click">Listeyi Sil</a>
+        </div>
+    </div>
+</div>
+
+

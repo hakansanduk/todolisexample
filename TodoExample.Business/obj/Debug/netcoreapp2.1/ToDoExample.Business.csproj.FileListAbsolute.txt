@@ -1,0 +1,14 @@
+C:\Users\Hakan\Desktop\ToDoExample\TodoExample.Business\bin\Debug\netcoreapp2.1\ToDoExample.Business.deps.json
+C:\Users\Hakan\Desktop\ToDoExample\TodoExample.Business\bin\Debug\netcoreapp2.1\ToDoExample.Business.dll
+C:\Users\Hakan\Desktop\ToDoExample\TodoExample.Business\bin\Debug\netcoreapp2.1\ToDoExample.Business.pdb
+C:\Users\Hakan\Desktop\ToDoExample\TodoExample.Business\bin\Debug\netcoreapp2.1\ToDoExample.DataAccess.dll
+C:\Users\Hakan\Desktop\ToDoExample\TodoExample.Business\bin\Debug\netcoreapp2.1\ToDoExample.Entities.dll
+C:\Users\Hakan\Desktop\ToDoExample\TodoExample.Business\bin\Debug\netcoreapp2.1\ToDoExample.DataAccess.pdb
+C:\Users\Hakan\Desktop\ToDoExample\TodoExample.Business\bin\Debug\netcoreapp2.1\ToDoExample.Entities.pdb
+C:\Users\Hakan\Desktop\ToDoExample\TodoExample.Business\obj\Debug\netcoreapp2.1\ToDoExample.Business.csprojAssemblyReference.cache
+C:\Users\Hakan\Desktop\ToDoExample\TodoExample.Business\obj\Debug\netcoreapp2.1\ToDoExample.Business.csproj.CoreCompileInputs.cache
+C:\Users\Hakan\Desktop\ToDoExample\TodoExample.Business\obj\Debug\netcoreapp2.1\ToDoExample.Business.AssemblyInfoInputs.cache
+C:\Users\Hakan\Desktop\ToDoExample\TodoExample.Business\obj\Debug\netcoreapp2.1\ToDoExample.Business.AssemblyInfo.cs
+C:\Users\Hakan\Desktop\ToDoExample\TodoExample.Business\obj\Debug\netcoreapp2.1\ToDoExample.Business.csproj.CopyComplete
+C:\Users\Hakan\Desktop\ToDoExample\TodoExample.Business\obj\Debug\netcoreapp2.1\ToDoExample.Business.dll
+C:\Users\Hakan\Desktop\ToDoExample\TodoExample.Business\obj\Debug\netcoreapp2.1\ToDoExample.Business.pdb

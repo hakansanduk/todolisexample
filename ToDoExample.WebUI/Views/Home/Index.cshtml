@@ -1,0 +1,125 @@
+﻿@model List<ToDoExample.Entities.ToDoList>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>ToDo List</h2>
+<hr />
+<div class="row">
+    <div class="col-md-12 mb-3">
+        <a href="#" class="btn btn-success click" data-target="home/addlistmodal">Yeni Liste Oluştur</a>
+    </div>
+
+</div>
+<div class="row">
+    @foreach (var todo in Model)
+    {
+        <partial name="_ToDo" for="@todo" />
+    }
+</div>
+
+
+
+
+<!-- CRUD Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!--JQuery ile doldurulacak-->
+        </div>
+    </div>
+</div>
+
+
+<!-- Alert Modal -->
+<div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Hatırlatma</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="refreshPage();">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+
+        setInterval(controlDate, 20000);
+
+        function controlDate()
+        {
+
+            var newDate = new Date();
+            newDate.setMonth(newDate.getMonth() + 1);
+            var date = newDate.getFullYear() + "-" + ("0" + newDate.getMonth()).slice(-2) + "-" + ("0" + newDate.getDate()).slice(-2) + "T" + ("0" + newDate.getHours()).slice(-2) + ":" + ("0" + newDate.getMinutes()).slice(-2) + ":00";
+            var json = @Html.Raw(Json.Serialize(@Model));
+            var length = json.length;
+            var data = "";
+            for (var i = 0; i < length; i++)
+            {
+                var toDoLength = json[i].toDoItems.length;
+                for (var j = 0; j < toDoLength; j++)
+                {
+                    if (json[i].toDoItems[j].dateTime == date && json[i].toDoItems[j].isValid === true)
+                    {
+                        data += json[i].name + " listesinde " + json[i].toDoItems[j].card + " görev zamanı geldi </br>";
+                        $.ajax({
+                            type: "POST",
+                            url: "/home/updateIsValid",
+                            data: { id: json[i].toDoItems[j].id },
+                            dataType: "json"
+                        });
+                    }
+                }
+            }
+            if (data != "")
+            {
+                $("#alertModal .modal-body").html(data);
+                $("#alertModal").modal("show");
+            }
+    }
+
+    function refreshPage()
+    {
+        location.reload();
+    }
+
+
+</script>
+
+<script>
+
+    $(function () {
+        $("body").on("click", ".click", function () {
+            var url = $(this).data("target");
+            $.post(url, function (data) { })
+                .done(function (data) {
+                    $("#exampleModal .modal-content").html(data);
+                    $("#exampleModal").modal("show");
+                })
+                .fail(function () {
+                    $("#exampleModal .modal-content").text("Error!!");
+                    $("#exampleModal").modal("show");
+                })
+
+        });
+    })
+</script>
+
+
+

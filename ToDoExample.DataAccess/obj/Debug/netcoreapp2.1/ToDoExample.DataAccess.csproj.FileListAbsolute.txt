@@ -1,0 +1,15 @@
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\bin\Debug\netcoreapp2.1\ToDoExample.DataAccess.deps.json
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\bin\Debug\netcoreapp2.1\ToDoExample.DataAccess.runtimeconfig.json
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\bin\Debug\netcoreapp2.1\ToDoExample.DataAccess.runtimeconfig.dev.json
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\bin\Debug\netcoreapp2.1\ToDoExample.DataAccess.dll
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\bin\Debug\netcoreapp2.1\ToDoExample.DataAccess.pdb
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\bin\Debug\netcoreapp2.1\ToDoExample.Entities.dll
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\bin\Debug\netcoreapp2.1\ToDoExample.Entities.pdb
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\obj\Debug\netcoreapp2.1\ToDoExample.DataAccess.csprojAssemblyReference.cache
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\obj\Debug\netcoreapp2.1\ToDoExample.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\obj\Debug\netcoreapp2.1\ToDoExample.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\obj\Debug\netcoreapp2.1\ToDoExample.DataAccess.AssemblyInfo.cs
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\obj\Debug\netcoreapp2.1\ToDoExample.DataAccess.csproj.CopyComplete
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\obj\Debug\netcoreapp2.1\ToDoExample.DataAccess.dll
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\obj\Debug\netcoreapp2.1\ToDoExample.DataAccess.pdb
+C:\Users\Hakan\Desktop\ToDoExample\ToDoExample.DataAccess\obj\Debug\netcoreapp2.1\ToDoExample.DataAccess.genruntimeconfig.cache

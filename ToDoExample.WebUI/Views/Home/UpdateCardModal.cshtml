@@ -1,0 +1,31 @@
+﻿@model ToDoExample.Entities.ToDoItem
+<div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">@Model.Card Kartını Güncelle</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<form asp-controller="Home" asp-action="UpdateCard">
+    <div class="modal-body">
+        <div class="col-md-12">
+            <input type="hidden" asp-for="@Model.Id" value="@Model.Id" />
+            <input type="hidden" asp-for="@Model.ToDoListId" value="@Model.ToDoListId" />
+            <div class="form-group">
+                <label for="card">Kart</label>
+                <input type="text" class="form-control" asp-for="@Model.Card" value="@Model.Card">
+            </div>
+            <div class="form-group">
+                <label for="datetime">Tarih</label>
+                <input type="datetime-local" class="form-control" asp-for="@Model.DateTime" value="@Model.DateTime.ToString("yyyy-MM-ddTHH:mm")" min="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" max="2999-06-14T00:00">
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" asp-for="@Model.isValid"  checked="@Model.isValid" ><span class="ml-1">Görev zamanı geldiğinde uyarı ver.</span></label>    
+            </div>
+
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <button type="submit" class="btn btn-primary">Kartı Güncelle</button>
+    </div>
+</form>
